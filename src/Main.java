@@ -47,5 +47,22 @@ public class Main {
         }
     }
 
+    static void uloha3() {
+        int cislo = 6;
+        boolean isPrimeNumber = false;
+        for (int i = 2; i <= cislo / 2; i++) {
+            if (cislo % i == 0) {
+                isPrimeNumber = true;
+                break;
+            }
+        }
+
+        if (!isPrimeNumber) {
+            System.out.println(cislo + " is prime num.");
+        } else {
+            System.out.println(cislo + " is not prime num.");
+        }
+    }
+
 
 }
