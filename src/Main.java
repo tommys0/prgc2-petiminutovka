@@ -33,5 +33,19 @@ public class Main {
         }
     }
 
+    static void uloha2() {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7};
+        int searchMedian = numbers.length / 2;
+        int numberList = numbers.length % 2;
+
+        if (numberList == 1) {
+            System.out.println(numbers[searchMedian]);
+        } else if (numberList == 0) {
+            System.out.println(numbers[searchMedian - 1] + ", " + numbers[searchMedian]);
+        } else {
+            System.out.println("error");
+        }
+    }
+
 
 }
