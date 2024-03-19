@@ -64,5 +64,20 @@ public class Main {
         }
     }
 
+    static void uloha4() {
+        for (int i = 1; i <= 100; i++) {
+            boolean divisibleByThree = (i % 3 == 0) || (Integer.toString(i).contains("3"));
+            boolean divisibleByFive = (i % 5 == 0) || (Integer.toString(i).contains("5"));
 
+            if (divisibleByThree && divisibleByFive) {
+                System.out.println("BUM-PRÁSK");
+            } else if (divisibleByThree) {
+                System.out.println("BUM");
+            } else if (divisibleByFive) {
+                System.out.println("PRÁSK");
+            } else {
+                System.out.println(i);
+            }
+        }
+    }
 }
